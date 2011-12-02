@@ -11,7 +11,6 @@ EXAMPLE
 Take a look at this role.
 
     $ knife role show -Fj test_role
-    knife role show -Fj test_role
     {
       "name": "test_role",
       "default_attributes": {
