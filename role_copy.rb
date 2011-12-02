@@ -27,6 +27,8 @@ class Chef
           exit 1
         end
 
+        # This sucks, but there's no clean way to check
+        # if a load failed. I have a patch for that though :P
         begin
           try_new_role = Chef::Role.load(@new_role_name)
           ui.fatal("Role #{@new_role_name} already exists")
