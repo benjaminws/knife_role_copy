@@ -47,7 +47,7 @@ class Chef
         new_role.env_run_lists(original_role.env_run_lists)
         new_role.default_attributes(original_role.default_attributes)
         new_role.override_attributes(original_role.override_attributes)
-        create_object(new_role)
+        create_object(new_role, object_class: Chef::Role)
       end
     end
   end
